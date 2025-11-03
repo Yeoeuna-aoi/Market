@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnica School - Formando Profesionales de Acero</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       // Barra de Navegación
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <img src="images/logos/logo-empresa.png" alt="Logo" id="navbarLogo" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarCarreras" role="button" data-bs-toggle="dropdown" aria-expanded="false">Carreras</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarCarreras">
+                            <li><a class="dropdown-item" href="Admin.html">Administración</a></li>
+                            <li><a class="dropdown-item" href="Meca.html">Mecánica</a></li>
+                            <li><a class="dropdown-item" href="Software.html">Ingeniería de Software</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#eventos">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    /// Sección del Carrusel
+    <section id="inicio" class="carousel-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Carrusel/flyer1.jpg" class="d-block w-100" alt="Tecnica School - Más de 25 años">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Más de 25 Años Formando Profesionales</h2>
+                        <p>Impulsando el desarrollo de los jóvenes chimbotanos</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Carrusel/flyer2.jpg" class="d-block w-100" alt="42% de Mujeres en Tecnica School">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>42% de Mujeres Estudiando con Nosotros</h2>
+                        <p>Capacitación técnica de excelencia para todos</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Carrusel/flyer3.jpg" class="d-block w-100" alt="Inscripciones Abiertas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>¡Las Inscripciones Siguen Abiertas!</h2>
+                        <p>Postula al Technical School hasta el 14 de marzo</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+    <!-- Sección de Carreras -->
+    <section id="carreras" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Nuestras Carreras Técnicas</h2>
+                <p class="section-subtitle">Formación profesional de calidad para tu futuro</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card career-card h-100 shadow-hover">
+                        <img src="images/carreras/administracion.png" class="card-img-top" alt="Administración Industrial">
+                        <div class="card-body">
+                            <h5 class="card-title">Administración Industrial</h5>
+                            <p class="card-text">Desarrolla habilidades en gestión empresarial, planificación estratégica y liderazgo organizacional. Aprende a administrar recursos y optimizar procesos en el mundo corporativo.</p>
+                            <a href="#contacto" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card career-card h-100 shadow-hover">
+                        <img src="images/carreras/mecatronica.png" class="card-img-top" alt="Mecatrónica Industrial">
+                        <div class="card-body">
+                            <h5 class="card-title">Mecatrónica Industrial</h5>
+                            <p class="card-text">Especialízate en la integración de sistemas mecánicos, electrónicos y de control. Prepárate para la industria 4.0 con conocimientos en automatización y robótica industrial.</p>
+                            <a href="#contacto" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card career-card h-100 shadow-hover">
+                        <img src="images/carreras/software.jpg" class="card-img-top" alt="Ingeniería de Software">
+                        <div class="card-body">
+                            <h5 class="card-title">Ingeniería de Software</h5>
+                            <p class="card-text">Conviértete en desarrollador profesional dominando lenguajes de programación, bases de datos y metodologías ágiles. Crea aplicaciones innovadoras para el futuro digital.</p>
+                            <a href="#contacto" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección de los Eventos -->
+    <section id="eventos" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Próximos Eventos</h2>
+                <p class="section-subtitle">Mantente informado sobre nuestras actividades</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card event-card h-100 shadow-hover">
+                        <img src="images/eventos/evento1.jpg" class="card-img-top" alt="Bienvenida Promoción 2025">
+                        <div class="card-body">
+                            <h5 class="card-title">Bienvenida Promoción 2025</h5>
+                            <p class="card-text"><i class="bi bi-calendar-event"></i> <strong>Fecha:</strong> Marzo 2025</p>
+                            <p class="card-text"><i class="bi bi-geo-alt-fill"></i> <strong>Lugar:</strong> Technical School - Chimbote</p>
+                            <p class="card-text">¡Ya estamos listos para transformar el futuro! Celebramos la llegada de nuestra nueva promoción 2025.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card h-100 shadow-hover">
+                        <img src="images/eventos/evento2.jpg" class="card-img-top" alt="Día de Limpieza de Playas">
+                        <div class="card-body">
+                            <h5 class="card-title">Día Internacional de Limpieza de Playas</h5>
+                            <p class="card-text"><i class="bi bi-calendar-event"></i> <strong>Fecha:</strong> Septiembre 2025</p>
+                            <p class="card-text"><i class="bi bi-geo-alt-fill"></i> <strong>Lugar:</strong> Playas de Chimbote</p>
+                            <p class="card-text">Unidos por un mar más limpio. Jornada de responsabilidad ambiental con nuestros estudiantes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card event-card h-100 shadow-hover">
+                        <img src="images/eventos/evento3.png" class="card-img-top" alt="Premio Creatividad Empresarial">
+                        <div class="card-body">
+                            <h5 class="card-title">Creatividad Empresarial 2022</h5>
+                            <p class="card-text"><i class="bi bi-calendar-event"></i> <strong>Fecha:</strong> Diciembre 2022</p>
+                            <p class="card-text"><i class="bi bi-geo-alt-fill"></i> <strong>Lugar:</strong> UPC - Lima</p>
+                            <p class="card-text">Ganadores en educación con el proyecto "Profesionales de Acero". Reconocimiento a la excelencia educativa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección del Contacto -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">¿Tienes alguna consulta? Estamos aquí para ayudarte</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Información de Contacto</h4>
+                        <div class="info-item mb-3">
+                            <i class="bi bi-geo-alt-fill text-primary"></i>
+                            <strong>Planta Siderúrgica (Chimbote):</strong><br>
+                            Av. Santiago Antúnez de Mayolo s/n, Chimbote - Santa - Áncash
+                        </div>
+                        <div class="info-item mb-3">
+                            <i class="bi bi-telephone-fill text-primary"></i>
+                            <strong>Teléfono:</strong><br>
+                            +51 43 483000
+                        </div>
+                        <div class="info-item mb-3">
+                            <i class="bi bi-whatsapp text-primary"></i>
+                            <strong>WhatsApp:</strong><br>
+                            +51 943529146 / +51 989240060
+                        </div>
+                        <div class="info-item mb-3">
+                            <i class="bi bi-envelope-fill text-primary"></i>
+                            <strong>Email:</strong><br>
+                            ventasconstruccion@sider.com.pe<br>
+                            ventas-constructoras@sider.com.pe
+                        </div>
+                        <div class="info-item">
+                            <i class="bi bi-globe text-primary"></i>
+                            <strong>Web:</strong><br>
+                            <a href="https://siderexpress.com.pe" target="_blank">siderexpress.com.pe</a>
+                        </div>
+                    </div>
+                </div>
+                <!--  Formulario del Contacto -->
+                <div class="col-lg-6">
+                    <form class="contact-form" action="#" method="post">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección del Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Tecnica School</h5>
+                    <p class="motto">"Somos acero que trasciende"</p>
+                    <p>Formando profesionales técnicos de excelencia desde hace más de 25 años.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-white-50">Inicio</a></li>
+                        <li><a href="#carreras" class="text-white-50">Carreras</a></li>
+                        <li><a href="#eventos" class="text-white-50">Eventos</a></li>
+                        <li><a href="#contacto" class="text-white-50">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Síguenos</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Tecnica School - SIDERPERU. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts de Bootstrap y Funcionalidad del Navbar -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNavbar');
+            const logo = document.getElementById('navbarLogo');
+            
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+                logo.src = 'images/logos/logo-technical.jpg';
+            } else {
+                navbar.classList.remove('scrolled');
+                logo.src = 'images/logos/logo-empresa.png';
+            }
+        });
+    </script>
+</body>
+</html>
