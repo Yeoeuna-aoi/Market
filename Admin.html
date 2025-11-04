@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-       // Barra de Navegación
+       <!-- Barra de Navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="#inicio">
-                <img src="images/logos/logo-empresa.png" alt="Logo" id="navbarLogo" class="navbar-logo">
+            <a class="navbar-brand" href="Index.html">
+                <img src="images/placeholder.png" alt="Logo" id="navbarLogo" class="navbar-logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -21,10 +21,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#inicio">Inicio</a>
+                        <a class="nav-link" href="Index.html">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarCarreras" role="button" data-bs-toggle="dropdown" aria-expanded="false">Carreras</a>
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarCarreras" role="button" data-bs-toggle="dropdown" aria-expanded="false">Carreras</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarCarreras">
                             <li><a class="dropdown-item" href="Admin.html">Administración</a></li>
                             <li><a class="dropdown-item" href="Meca.html">Mecánica</a></li>
@@ -32,15 +32,68 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#eventos">Eventos</a>
+                        <a class="nav-link" href="Index.html#eventos">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link" href="Index.html#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Hero Section -->
+    <header class="career-hero" style="background-image: url('images/placeholder.png');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold">Administración Industrial</h1>
+                    <p class="lead">Formando líderes en la gestión y optimización de procesos industriales.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Descripción de la Carrera -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title text-center">Descripción de la Carrera</h2>
+                    <p class="lead text-center">La carrera de Administración Industrial combina la gestión empresarial con un profundo conocimiento de los procesos productivos. Nuestros egresados están preparados para planificar, organizar, dirigir y controlar los recursos de una organización para maximizar su eficiencia y rentabilidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan de Estudios -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Plan de Estudios</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="mb-3">Primer Año</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">Matemática Aplicada</li>
+                        <li class="list-group-item">Contabilidad General</li>
+                        <li class="list-group-item">Introducción a la Administración</li>
+                        <li class="list-group-item">Economía General</li>
+                        <li class="list-group-item">Informática para los Negocios</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-3">Segundo Año</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">Gestión de Operaciones</li>
+                        <li class="list-group-item">Logística y Cadena de Suministro</li>
+                        <li class="list-group-item">Marketing Industrial</li>
+                        <li class="list-group-item">Gestión de la Calidad</li>
+                        <li class="list-group-item">Legislación Empresarial</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Sección del Footer -->
     <footer class="footer bg-dark text-white py-4">
@@ -55,9 +108,9 @@
                     <h5>Enlaces Rápidos</h5>
                     <ul class="list-unstyled">
                         <li><a href="Index.html" class="text-white-50">Inicio</a></li>
-                        <li><a href="#carreras" class="text-white-50">Carreras</a></li>
-                        <li><a href="#eventos" class="text-white-50">Eventos</a></li>
-                        <li><a href="#contacto" class="text-white-50">Contacto</a></li>
+                        <li><a href="Index.html#carreras" class="text-white-50">Carreras</a></li>
+                        <li><a href="Index.html#eventos" class="text-white-50">Eventos</a></li>
+                        <li><a href="Index.html#contacto" class="text-white-50">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-3">
@@ -82,13 +135,13 @@
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('mainNavbar');
             const logo = document.getElementById('navbarLogo');
-            
+
             if (window.scrollY > 100) {
                 navbar.classList.add('scrolled');
-                logo.src = 'images/logos/logo-technical.jpg';
+                logo.src = 'images/placeholder.png';
             } else {
                 navbar.classList.remove('scrolled');
-                logo.src = 'images/logos/logo-empresa.png';
+                logo.src = 'images/placeholder.png';
             }
         });
     </script>
