@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingeniería de Software</title>
+    <title>Mecatrónica Industrial</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-       // Barra de Navegación
+       <!-- Barra de Navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand" href="#inicio">
-                <img src="images/logos/logo-empresa.png" alt="Logo" id="navbarLogo" class="navbar-logo">
+            <a class="navbar-brand" href="Index.html">
+                <img src="images/placeholder.png" alt="Logo" id="navbarLogo" class="navbar-logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -21,10 +21,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#inicio">Inicio</a>
+                        <a class="nav-link" href="Index.html">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarCarreras" role="button" data-bs-toggle="dropdown" aria-expanded="false">Carreras</a>
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarCarreras" role="button" data-bs-toggle="dropdown" aria-expanded="false">Carreras</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarCarreras">
                             <li><a class="dropdown-item" href="Admin.html">Administración</a></li>
                             <li><a class="dropdown-item" href="Meca.html">Mecánica</a></li>
@@ -32,24 +32,69 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#eventos">Eventos</a>
+                        <a class="nav-link" href="Index.html#eventos">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link" href="Index.html#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="card" style="width: 18rem;">
-        <img src="images/carreras/software.jpg" class="card-img-top" alt="">
-        <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-</div>
-    <address spellcheck="false"
+
+    <!-- Hero Section -->
+    <header class="career-hero" style="background-image: url('images/placeholder.png');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold">Mecatrónica Industrial</h1>
+                    <p class="lead">Integrando la mecánica, electrónica y la informática para la automatización de procesos industriales.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Descripción de la Carrera -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title text-center">Descripción de la Carrera</h2>
+                    <p class="lead text-center">La Mecatrónica Industrial es una disciplina que une sinérgicamente la ingeniería mecánica, electrónica, informática y de control. El objetivo es diseñar y desarrollar productos y procesos "inteligentes", que mejoren la eficiencia y productividad de la industria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan de Estudios -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Plan de Estudios</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="mb-3">Primer Año</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">Cálculo Diferencial e Integral</li>
+                        <li class="list-group-item">Dibujo Técnico Asistido por Computadora</li>
+                        <li class="list-group-item">Fundamentos de Programación</li>
+                        <li class="list-group-item">Circuitos Eléctricos</li>
+                        <li class="list-group-item">Química General</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-3">Segundo Año</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">Sistemas de Control</li>
+                        <li class="list-group-item">Electrónica Analógica y Digital</li>
+                        <li class="list-group-item">Mecánica de Materiales</li>
+                        <li class="list-group-item">Sistemas Hidráulicos y Neumáticos</li>
+                        <li class="list-group-item">Robótica Industrial</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Sección del Footer -->
     <footer class="footer bg-dark text-white py-4">
         <div class="container">
@@ -63,9 +108,9 @@
                     <h5>Enlaces Rápidos</h5>
                     <ul class="list-unstyled">
                         <li><a href="Index.html" class="text-white-50">Inicio</a></li>
-                        <li><a href="#carreras" class="text-white-50">Carreras</a></li>
-                        <li><a href="#eventos" class="text-white-50">Eventos</a></li>
-                        <li><a href="#contacto" class="text-white-50">Contacto</a></li>
+                        <li><a href="Index.html#carreras" class="text-white-50">Carreras</a></li>
+                        <li><a href="Index.html#eventos" class="text-white-50">Eventos</a></li>
+                        <li><a href="Index.html#contacto" class="text-white-50">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-3">
@@ -90,13 +135,13 @@
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('mainNavbar');
             const logo = document.getElementById('navbarLogo');
-            
+
             if (window.scrollY > 100) {
                 navbar.classList.add('scrolled');
-                logo.src = 'images/logos/logo-technical.jpg';
+                logo.src = 'images/placeholder.png';
             } else {
                 navbar.classList.remove('scrolled');
-                logo.src = 'images/logos/logo-empresa.png';
+                logo.src = 'images/placeholder.png';
             }
         });
     </script>
